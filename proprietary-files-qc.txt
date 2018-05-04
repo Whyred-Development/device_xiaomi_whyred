@@ -96,17 +96,14 @@ vendor/bin/wcnss_filter
 -vendor/lib64/libbtnv.so
 
 # Camera Hals
-
 vendor/lib/hw/camera.sdm660.so
 
 # Camera libraries
-
 lib/libcamera2ndk.so
 lib/libcamera_client.so
 lib/libCameraEffectJNI.so
 lib/libcamera_metadata.so
 lib/libcameraservice.so
-
 vendor/lib64/libdualcameraddm.so
 vendor/lib64/libmmcamera2_frame_algorithm.so
 vendor/lib64/libmmcamera2_is.so
@@ -118,7 +115,6 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
-
 vendor/lib/libmmcamera_whyred_imx376_ofilm_global_i_eeprom.so
 vendor/lib/libmmcamera_whyred_imx376_ofilm_global_i.so
 vendor/lib/libmmcamera_whyred_imx376_sunny_global_ii_eeprom.so
@@ -142,15 +138,7 @@ vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii.so
 vendor/lib/libmmcamera_tuning_lookup.so
 vendor/lib/libmmcamera_tuning.so
 
-# Camera Actuator
-
-vendor/lib/libactuator_whyred_imx486_ofilm_global_i_dw9714v.so
-vendor/lib/libactuator_whyred_imx486_qtech_global_ii_dw9714v.so
-vendor/lib/libactuator_whyred_s5k2l7_ofilm_cn_i_ak7374.so
-vendor/lib/libactuator_whyred_s5k2l7_qtech_cn_ii_ak7374.so
-
 # Camera
-
 vendor/etc/camera/age_gender_bg
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/crown_156_128.bin
@@ -163,9 +151,7 @@ vendor/etc/camera/face_ravishing_238_224
 vendor/etc/camera/face_splendid_274_200
 vendor/etc/camera/female_bg.png
 vendor/etc/camera/female_icon.png
-
 vendor/etc/camera/imx376_chromatix.xml
-
 vendor/etc/camera/imx486_ofilm_gp0694_chromatix.xml
 vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/male_bg.png
@@ -173,9 +159,7 @@ vendor/etc/camera/male_icon.png
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/morpho_lowlight4.0.xml
-
 vendor/etc/camera/ov13855_f13v10l_chromatix.xml
-
 vendor/etc/camera/people_gender.dat
 vendor/etc/camera/s5k2l7_8953_chromatix.xml
 vendor/etc/camera/s5k2l7_chromatix.xml
@@ -207,8 +191,13 @@ vendor/etc/camera/whyred_s5k5e8_qtech_cn_ii_chromatix.xml
 vendor/etc/camera/whyred_s5k5e8_qtech_global_ii_chromatix.xml
 vendor/etc/camera/yuv_test.xml
 
-# Chromatix
+# Camera Actuator
+vendor/lib/libactuator_whyred_imx486_ofilm_global_i_dw9714v.so
+vendor/lib/libactuator_whyred_imx486_qtech_global_ii_dw9714v.so
+vendor/lib/libactuator_whyred_s5k2l7_ofilm_cn_i_ak7374.so
+vendor/lib/libactuator_whyred_s5k2l7_qtech_cn_ii_ak7374.so
 
+# Chromatix
 vendor/lib/libchromaflash.so
 vendor/lib/libchromatix_csidtg_common.so
 vendor/lib/libchromatix_csidtg_cpp_preview.so
@@ -736,6 +725,8 @@ etc/permissions/com.quicinc.cne.xml
 -framework/cneapiclient.jar
 -framework/com.quicinc.cne.api-V1.0-java.jar
 -framework/com.quicinc.cne.jar
+lib64/libvendorconn.so
+lib/libvendorconn.so
 lib/vendor.qti.hardware.data.latency@1.0.so
 lib64/vendor.qti.hardware.data.latency@1.0.so
 -priv-app/CNEService/CNEService.apk
@@ -1022,23 +1013,54 @@ vendor/lib64/librs_adreno_sha1.so
 vendor/lib64/librs_adreno.so
 vendor/lib64/libRSDriver_adreno.so
 
--vendor/lib64/libgpustats.so
--vendor/lib/libgpustats.so
+# Graphics - DRM
+vendor/lib/libsdedrm.so
+vendor/lib64/libsdedrm.so
 
-lib64/libvendorconn.so
-lib/libvendorconn.so
+# Graphics - HDR
+vendor/lib/libhdr_tm.so
+vendor/lib64/libhdr_tm.so
 
-# Vulkan
+# Graphics - SDM
+lib/vendor.qti.hardware.qdutils_disp@1.0.so
+lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/lib/libqseed3.so
+vendor/lib/libsdm-color.so
+vendor/lib/libsdm-diag.so
+-vendor/lib/libsdm-disp-vndapis.so
+vendor/lib/libsdmextension.so
+vendor/lib/libtinyxml2_1.so
+vendor/lib/vendor.display.color@1.0_vendor.so
+vendor/lib/vendor.display.postproc@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+vendor/lib64/libqseed3.so
+vendor/lib64/libsdm-color.so
+vendor/lib64/libsdm-diag.so
+-vendor/lib64/libsdm-disp-vndapis.so
+vendor/lib64/libsdmextension.so
+vendor/lib64/libtinyxml2_1.so
+vendor/lib64/vendor.display.color@1.0_vendor.so
+vendor/lib64/vendor.display.postproc@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+
+# Geaphic - Vulkan
 vendor/lib64/hw/vulkan.sdm660.so
 vendor/lib/hw/vulkan.sdm660.so
 
-# QDutils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-lib/vendor.qti.hardware.qdutils_disp@1.0.so
-lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+# ESE-Powermanager
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
+lib/vendor.qti.esepowermanager@1.0.so
+lib64/vendor.qti.esepowermanager@1.0.so
+vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
+vendor/lib64/vendor.qti.esepowermanager@1.0_vendor.so
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 
 # Improvetouch
 vendor/bin/hbtp_daemon
@@ -1091,6 +1113,8 @@ vendor/lib/libsmwrapper.so
 # Media
 lib/libmmosal.so
 lib64/libmmosal.so
+
+-vendor/lib64/libgpustats.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/libOmxAacEnc.so
 vendor/lib64/libOmxAlacDec.so
@@ -1111,6 +1135,7 @@ vendor/lib64/libOmxVdec.so
 vendor/lib64/libOmxVenc.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
+-vendor/lib/libgpustats.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAacEnc.so
 vendor/lib/libOmxAlacDec.so
