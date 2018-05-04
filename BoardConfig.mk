@@ -245,6 +245,9 @@ TARGET_FS_CONFIG_GEN += $(DEVICE_PATH)/config.fs
 #TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 #TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_HAS_LARGE_FILESYSTEM := true
