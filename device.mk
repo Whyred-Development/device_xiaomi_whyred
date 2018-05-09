@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# For config.fs
+PRODUCT_PACKAGES += \
+    fs_config_files
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -296,12 +300,12 @@ PRODUCT_PACKAGES += \
     lights.sdm660
 
 # LiveDisplay native
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-sdm \
-    vendor.lineage.livedisplay-V1.0-java
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@1.0-service-sdm \
+#    vendor.lineage.livedisplay-V1.0-java
 
-PRODUCT_BOOT_JARS += \
-    vendor.lineage.livedisplay-V1.0-java
+#PRODUCT_BOOT_JARS += \
+#    vendor.lineage.livedisplay-V1.0-java
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -373,7 +377,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     init.qcom.sensors.sh \
     init.qcom.post_boot.sh \
-    init.qti.qseecomd.sh \
     ueventd.qcom.rc
 
 # RCS
