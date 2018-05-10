@@ -1310,6 +1310,9 @@ vendor/lib64/vendor.qti.hardware.improvetouch.gesturemanager@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so
 vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so
 
+# IPA
+vendor/bin/ipacm-diag
+
 # Keystore
 vendor/lib64/hw/keystore.sdm660.so
 vendor/lib/hw/keystore.sdm660.so
@@ -1376,19 +1379,33 @@ vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 
+# Misc
+bin/seempd
+bin/ssr_setup:vendor/bin/ssr_setup
+vendor/bin/mdtpd
+vendor/bin/mlid
+vendor/bin/qdmastatsd
+vendor/bin/qfp-daemon
+vendor/bin/seemp_healthd
+vendor/bin/ssr_diag
+vendor/lib/libmmi.so
+vendor/lib64/libmmi.so
+
 # Modem
 vendor/lib64/libwms.so
 vendor/lib/libwms.so
 
 # Perf
+vendor/bin/pd-mapper
+vendor/bin/energy-awareness
+vendor/bin/msm_irqbalance
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 lib/vendor.qti.hardware.iop@1.0.so
 lib/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.perf@1.0.so
 lib64/vendor.qti.hardware.iop@1.0.so
 lib64/vendor.qti.hardware.iop@2.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
-vendor/bin/msm_irqbalance
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
 vendor/etc/perf/perfboostsconfig.xml
 vendor/lib/hw/vendor.qti.hardware.iop@1.0-impl.so
@@ -1483,10 +1500,22 @@ vendor/lib/libqmi.so
 vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
+# Power
+lib/libsuspend.so
+lib/android.hardware.power@1.0.so
+lib/android.hardware.power@1.1.so
+vendor/lib/hw/power.qcom.so
+
+lib64/libsuspend.so
+lib64/android.hardware.power@1.0.so
+lib64/android.hardware.power@1.1.so
+vendor/lib64/hw/power.qcom.so
+
 # Radio
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
+vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/port-bridge
 vendor/bin/qti
@@ -1605,6 +1634,8 @@ vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
 
 # Sensor
+vendor/bin/sensors.qcom
+
 lib64/libsensor1.so
 lib64/libsensor_reg.so
 lib64/libsensorservicehidl.so
