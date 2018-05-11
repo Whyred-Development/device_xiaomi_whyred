@@ -49,7 +49,6 @@ function configure_zram_parameters() {
             echo lz4 > /sys/block/zram0/comp_algorithm
             echo 805306368 > /sys/block/zram0/disksize
         else
-            echo lz4 > /sys/block/zram0/comp_algorithm
             echo 536870912 > /sys/block/zram0/disksize
         fi
         mkswap /dev/block/zram0
@@ -103,7 +102,7 @@ else
     echo $set_almk_ppr_adj > /sys/module/process_reclaim/parameters/min_score_adj
 
     #Set other memory parameters
-    echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+    echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
     echo 70 > /sys/module/process_reclaim/parameters/pressure_max
     echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
     echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
@@ -961,7 +960,6 @@ case "$target" in
         esac
         # Set Memory parameters
         configure_memory_parameters
-        restorecon -R /sys/devices/system/cpu
     ;;
 esac
 
@@ -1349,7 +1347,6 @@ case "$target" in
         esac
         #Enable Memory Features
         enable_memory_features
-        restorecon -R /sys/devices/system/cpu
     ;;
 esac
 
@@ -1369,7 +1366,7 @@ case "$target" in
         fi
 
         case "$soc_id" in
-            "293" | "304" | "338" )
+            "293" | "304" | "338" | "351" )
 
                 # Start Host based Touch processing
                 case "$hw_platform" in
@@ -1925,8 +1922,11 @@ case "$target" in
             echo 1 > /proc/sys/kernel/sched_prefer_sync_wakee_to_waker
 
             # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
+            echo 0-7 > /dev/cpuset/top-app/cpus
+            echo 4-7 > /dev/cpuset/foreground/boost/cpus
+            echo 0-2,4-7 > /dev/cpuset/foreground/cpus
+            echo 0-1 > /dev/cpuset/background/cpus
+            echo 0-2 > /dev/cpuset/system-background/cpus
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
@@ -1995,6 +1995,11 @@ case "$target" in
             # re-enable thermal and BCL hotplug
             echo 1 > /sys/module/msm_thermal/core_control/enabled
 
+            #Add-begin-HMI_L8866_A01-794,lijiang@longcheer.com,2018-01-20
+            #Enable input boost configuration
+            echo "0:1401600" > /sys/module/cpu_boost/parameters/input_boost_freq
+            echo 60 > /sys/module/cpu_boost/parameters/input_boost_ms
+            #Add-end-HMI_L8866_A01-794
             # Set Memory parameters
             configure_memory_parameters
 
@@ -2030,11 +2035,11 @@ case "$target" in
 
 
             # Start Host based Touch processing
-                case "$hw_platform" in
-                        "MTP" | "Surf" | "RCM" | "QRD" )
-                        start_hbtp
-                        ;;
-                esac
+            #    case "$hw_platform" in
+            #            "MTP" | "Surf" | "RCM" | "QRD" )
+            #            start_hbtp
+            #            ;;
+            #    esac
             ;;
         esac
         #Apply settings for sdm630
@@ -2042,11 +2047,11 @@ case "$target" in
             "318" | "327" )
 
             # Start Host based Touch processing
-            case "$hw_platform" in
-                "MTP" | "Surf" | "RCM" | "QRD" )
-                start_hbtp
-                ;;
-            esac
+            #case "$hw_platform" in
+            #    "MTP" | "Surf" | "RCM" | "QRD" )
+            #    start_hbtp
+            #    ;;
+            #esac
 
             # Setting b.L scheduler parameters
             echo 85 > /proc/sys/kernel/sched_upmigrate
@@ -2976,7 +2981,6 @@ case "$target" in
 
         # Set Memory parameters
         configure_memory_parameters
-        restorecon -R /sys/devices/system/cpu
 	;;
 esac
 
@@ -3068,7 +3072,12 @@ case "$target" in
         echo 128 > /sys/block/mmcblk0rpmb/bdi/read_ahead_kb
         echo 128 > /sys/block/mmcblk0rpmb/queue/read_ahead_kb
         setprop sys.post_boot.parsed 1
+
+        low_ram_enable=`getprop ro.config.low_ram`
+
+        if [ "$low_ram_enable" != "true" ]; then
         start gamed
+        fi
     ;;
     "msm8974")
         start mpdecision

@@ -1381,8 +1381,9 @@ vendor/lib/libOmxWmaDec.so
 
 # Misc
 bin/seempd
-bin/ssr_setup:vendor/bin/ssr_setup
-vendor/bin/mdtpd
+vendor/bin/ssr_setup
+vendor/bin/mtd
+bin/mtpd
 vendor/bin/mlid
 vendor/bin/qdmastatsd
 vendor/bin/qfp-daemon
