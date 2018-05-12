@@ -271,6 +271,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,${LOCAL_PATH}/init/vendor,$(TARGET_COPY_OUT_VENDOR))
+
 # IPv6
 #PRODUCT_PACKAGES += \
 #    ebtables \
@@ -366,22 +370,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.qcom.rc \
-    init.qcom.sh \
-    init.class_core.sh \
-    init.class_main.sh \
-    init.qcom.crashdata.sh \
-    init.qcom.sdio.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.target.rc \
-    init.qcom.sensors.sh \
-    init.qcom.post_boot.sh \
-    ueventd.qcom.rc
 
 # RCS
 PRODUCT_PACKAGES += \
