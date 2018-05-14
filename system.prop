@@ -297,3 +297,26 @@ ro.vendor.sensors.cmc=false
 ro.vendor.sdk.sensors.gestures=false
 
 ro.product.first_api_level=25
+
+# Misc
+ro.oem_unlock_supported=true
+ro.zygote=zygote64_32
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+ro.dalvik.vm.native.bridge=0
+dalvik.vm.usejit=true
+dalvik.vm.usejitprofiles=true
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.appimageformat=lz4
+pm.dexopt.first-boot=quicken
+pm.dexopt.boot=verify
+pm.dexopt.install=quicken
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.shared=speed
+debug.atrace.tags.enableflags=0
+ro.logdumpd.enabled=0
+persist.sys.timezone=Asia/Shanghai
