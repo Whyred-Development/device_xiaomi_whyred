@@ -1,4 +1,5 @@
 # Alarm
+-vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/power_off_alarm
 -vendor/framework/vendor.qti.hardware.alarm-V1.0-java.jar
 vendor/lib/vendor.qti.hardware.alarm@1.0.so
@@ -581,6 +582,8 @@ vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_video_default.so
 vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_video_face.so
 vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_video_weixin.so
 vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_weixin_video_3a.so
+vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_bokeh_preview.so
+vendor/lib/libchromatix_whyred_imx486_qtech_global_ii_bokeh_preview.so
 vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_bokeh_preview_3a.so
 vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_bokeh_snapshot.so
 vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_common.so
@@ -686,6 +689,8 @@ vendor/lib/libchromatix_whyred_ov13855_sunny_cn_i_video_weixin.so
 vendor/lib/libchromatix_whyred_ov13855_sunny_cn_i_weixin_video_3a.so
 vendor/lib/libchromatix_whyred_ov13855_sunny_cn_i_zsl_preview_bu64297.so
 vendor/lib/libchromatix_whyred_ov13855_sunny_cn_i_zsl_video_bu64297.so
+vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_bokeh_snapshot.so
+vendor/lib/libchromatix_whyred_s5k2l7_qtech_cn_ii_bokeh_snapshot.so
 vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_4k_preview_3a.so
 vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_4k_video_3a.so
 vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_bokeh_preview_3a.so
@@ -1783,3 +1788,11 @@ vendor/lib64/libwfdmmservice.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+
+# Extra apks
+-vendor/app/Qmmi/Qmmi.apk
+-vendor/app/QDMA-UI/QDMA-UI.apk
+-vendor/app/QDMA/QDMA.apk
+-vendor/app/SecProtect/SecProtect.apk
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
+-vendor/app/QFingerprintService/QFingerprintService.apk
