@@ -182,7 +182,6 @@ etc/permissions/globalpersonalassistant_permission.xml
 etc/permissions/handheld_core_hardware.xml
 etc/permissions/lpa.xml
 etc/permissions/privapp-permissions-google.xml
-etc/permissions/privapp-permissions-miui.xml
 etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti-vzw-ims-internal.xml
 etc/permissions/settings-aapt2-lib-rename.xml
@@ -471,12 +470,6 @@ lib/liblistensoundmodel2.so
 lib/liblogwrap.so
 lib/libmdsprpc.so
 lib/libminui.so
-lib/libmiui_chromium_support.so
-lib/libmiui_security.so
-lib/libmiuiclassproxy.so
-lib/libmiuidiffpatcher.so
-lib/libmiuiimageutilities.so
-lib/libmiuinative.so
 lib/libmmcamera_faceproc.so
 lib/libmmcamera_faceproc2.so
 lib/libmorpho_memory_allocator.so
@@ -735,8 +728,6 @@ lib64/libFidoCrypto_system.so
 lib64/libImageSearchAPI.so
 lib64/libMegviiUnlock-jni-1.2.so
 lib64/libMegviiUnlock.so
-lib64/libMiuiBluetooth.so
-lib64/libMiuiGalleryNSGIF.so
 lib64/libOmxMux.so
 lib64/libOpenCL_system.so
 lib64/libQseeR2fServiceJNI.so
@@ -839,12 +830,6 @@ lib64/libmdsprpc.so
 lib64/libmediaplayerservice.so
 lib64/libmegbucket.so
 lib64/libminui.so
-lib64/libmiui_chromium_support.so
-lib64/libmiui_security.so
-lib64/libmiuiclassproxy.so
-lib64/libmiuidiffpatcher.so
-lib64/libmiuiimageutilities.so
-lib64/libmiuinative.so
 lib64/libmmcamera_faceproc.so
 lib64/libmmcamera_faceproc2.so
 lib64/libmorpho_memory_allocator.so

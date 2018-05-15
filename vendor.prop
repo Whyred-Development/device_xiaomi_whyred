@@ -1,5 +1,12 @@
 # disable adb
 ro.adb.secure=0
+persist.service.debuggable=1
+persist.service.adb.enable=1
+persist.sys.usb.config=mtp,adb
+ro.debuggable=1
+
+# first api
+ro.product.first_api_level=25
 
 # Audio
 af.fast_track_multiplier=1
@@ -151,10 +158,10 @@ ro.bluetooth.emb_wp_mode=true
 ro.bluetooth.wipower=true
 qcom.bluetooth.soc=cherokee
 
-# System property for cabl
+# Cabl
 ro.qualcomm.cabl=0
 
-# ad
+# Ad
 ro.qcom.ad=1
 ro.qcom.ad.calib.data=/system/etc/calib.cfg
 ro.qcom.ad.sensortype=2
