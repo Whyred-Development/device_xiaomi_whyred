@@ -1516,6 +1516,15 @@ vendor/lib64/hw/power.qcom.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
+etc/permissions/embms.xml
+etc/permissions/qcrilhook.xml
+etc/permissions/telephonyservice.xml
+framework/embmslibrary.jar
+-framework/qcrilhook.jar
+-framework/qti-telephony-common.jar
+-framework/QtiTelephonyServicelibrary.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/port-bridge
@@ -1524,14 +1533,7 @@ vendor/bin/rmt_storage
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
-etc/permissions/embms.xml
-etc/permissions/qcrilhook.xml
-etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
--framework/qcrilhook.jar
-framework/qti-telephony-common.jar
-framework/QtiTelephonyServicelibrary.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+
 vendor/lib/libmdmdetect.so
 vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so
@@ -1549,7 +1551,6 @@ vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/librilqmiservices.so
@@ -1566,16 +1567,10 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
-vendor/lib/libril-qc-qmi-1.so
-vendor/lib64/libril-qc-qmi-1.so
-
-vendor/bin/imsqmidaemon
-vendor/bin/ims_rtp_daemon
-vendor/bin/imsdatadaemon
-vendor/bin/imsrcsd
 -app/ims/ims.apk
 -app/imssettings/imssettings.apk
-vendor/framework/qti-vzw-ims-internal.jar
+-app/uceShimService/uceShimService.apk
+-vendor/framework/qti-vzw-ims-internal.jar
 
 lib64/librcc.so
 lib64/lib-imsvtutils.so
@@ -1600,6 +1595,12 @@ lib/lib-imsvtutils.so
 lib/libimscamera_jni.so
 lib/lib-imsvtextutils.so
 
+vendor/bin/imsqmidaemon
+vendor/bin/ims_rtp_daemon
+vendor/bin/imsdatadaemon
+vendor/bin/imsrcsd
+
+vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/lib-dplmedia.so
 vendor/lib64/lib-imsrcs-v2.so
 vendor/lib64/lib-uceservice.so
@@ -1612,6 +1613,7 @@ vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/lib-imscmservice.so
 
+vendor/lib/libril-qc-qmi-1.so
 vendor/lib/lib-imsqimf.so
 vendor/lib/lib-imsxml.so
 vendor/lib/lib-imscmservice.so
@@ -1783,11 +1785,3 @@ vendor/lib64/libwfdmmservice.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
-
-# Extra apks
--vendor/app/Qmmi/Qmmi.apk
--vendor/app/QDMA-UI/QDMA-UI.apk
--vendor/app/QDMA/QDMA.apk
--vendor/app/SecProtect/SecProtect.apk
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
--vendor/app/QFingerprintService/QFingerprintService.apk

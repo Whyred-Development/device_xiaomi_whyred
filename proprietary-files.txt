@@ -33,7 +33,6 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libvpp_svc_skel.so
 
 # Audio ACDB
-
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
@@ -243,16 +242,6 @@ vendor/etc/qvr/qvrservice_config.txt
 vendor/etc/receiver_playback.wav
 vendor/etc/scve/facereco/gModel.dat
 vendor/etc/seccomp_policy/mediaextractor.policy
-vendor/etc/selinux/nonplat_file_contexts
-vendor/etc/selinux/nonplat_hwservice_contexts
-vendor/etc/selinux/nonplat_property_contexts
-vendor/etc/selinux/nonplat_seapp_contexts
-vendor/etc/selinux/nonplat_sepolicy.cil
-vendor/etc/selinux/nonplat_service_contexts
-vendor/etc/selinux/plat_sepolicy_vers.txt
-vendor/etc/selinux/precompiled_sepolicy
-vendor/etc/selinux/precompiled_sepolicy.plat_and_mapping.sha256
-vendor/etc/selinux/vndservice_contexts
 vendor/etc/silence.wav
 vendor/etc/silense.wav
 vendor/etc/speaker.ftcfg
@@ -326,7 +315,7 @@ vendor/bin/capture_audio.sh
 vendor/bin/climax
 vendor/bin/consumerird
 vendor/bin/cplay
-#vendor/bin/dd
+vendor/bin/dd
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
 vendor/bin/diag_klog
@@ -340,7 +329,7 @@ vendor/bin/fstman
 vendor/bin/ftmdaemon
 vendor/bin/gamed
 vendor/bin/garden_app
-#vendor/bin/getevent
+vendor/bin/getevent
 vendor/bin/hal_proxy_daemon
 vendor/bin/hhttest
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -370,7 +359,7 @@ vendor/bin/mmi_diag
 vendor/bin/mmid
 vendor/bin/myftm
 vendor/bin/myftm.agent.sh
-#vendor/bin/newfs_msdos
+vendor/bin/newfs_msdos
 vendor/bin/playback_audio.sh
 vendor/bin/qca6234-service.sh
 vendor/bin/qjpeg-dma-test
@@ -1032,6 +1021,17 @@ vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Missing framework
+framework/QPerformance.jar
+framework/audiosphere.jar
 vendor/framework/com.fingerprints.extension.jar
 vendor/framework/vendor.qti.hardware.factory-V1.0-java.jar
 vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+
+# Extra apks
+-vendor/app/CABLService/CABLService.apk
+-vendor/app/Qmmi/Qmmi.apk
+-vendor/app/QDMA-UI/QDMA-UI.apk
+-vendor/app/QDMA/QDMA.apk
+-vendor/app/SecProtect/SecProtect.apk
+-vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
+-vendor/app/QFingerprintService/QFingerprintService.apk
