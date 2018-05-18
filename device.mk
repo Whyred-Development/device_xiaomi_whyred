@@ -215,8 +215,8 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service.widevine
 
 # Fingerprint sensor
-PRODUCT_PACKAGES += \
-    fingerprint.sdm660 \
+#PRODUCT_PACKAGES += \
+#    fingerprint.sdm660 \
 #    android.hardware.biometrics.fingerprint@2.0-service.xiaomi_whyred
 
 PRODUCT_COPY_FILES += \
@@ -359,10 +359,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Power
-PRODUCT_PACKAGES += \
-    power.qcom \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
+#PRODUCT_PACKAGES += \
+#    power.qcom \
+#    android.hardware.power@1.0-impl \
+#    android.hardware.power@1.0-service
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -384,8 +384,8 @@ PRODUCT_PACKAGES += \
 #    librecovery_updater_whyred
 
 # RenderScript HAL
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
+#PRODUCT_PACKAGES += \
+#    android.hardware.renderscript@1.0-impl
 
 # RIL
 PRODUCT_PACKAGES += \
@@ -406,10 +406,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
 
 # Sensors
-PRODUCT_PACKAGES += \
-    sendors.sdm660 \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+#PRODUCT_PACKAGES += \
+#    sendors.sdm660 \
+#    android.hardware.sensors@1.0-impl \
+#    android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
