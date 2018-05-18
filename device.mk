@@ -138,8 +138,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth@1.0-service-qti \
     libbt-vendor \
     libbthost_if \
     bt-mac-generator
@@ -179,16 +178,13 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.sdm660 \
     gralloc.sdm660 \
     hwcomposer.sdm660 \
     memtrack.sdm660 \
     libdisplayconfig \
-    libhwc2on1adapter \
     libgenlock \
     liboverlay \
     libtinyxml \
-    libqdMetaData \
     libqdMetaData.system
 
 PRODUCT_PACKAGES += \
@@ -199,9 +195,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    android.hardware.configstore@1.0-service \
-    vendor.display.config@1.0 \
-    vendor.display.config@1.0_vendor
+    android.hardware.renderscript@1.0-impl
 
 # Display Calib
 PRODUCT_COPY_FILES += \
@@ -363,10 +357,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
-
-# Privapp Whitelist
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/privapp-permissions-qti.xml
 
 # Power
 PRODUCT_PACKAGES += \
