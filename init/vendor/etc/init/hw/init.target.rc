@@ -59,7 +59,6 @@ on fs
 
     restorecon_recursive /persistbak
 
-
     write /sys/kernel/boot_adsp/boot 1
     chown system system /dev/goodix_fp
     #chmod 0644 /dev/goodix_fp
@@ -91,6 +90,16 @@ on post-fs-data
     mkdir /data/misc/seemp 0700 system system
     mkdir /data/misc/tloc 0700 system drmrpc
     start pa-cal-load
+
+service logcat_debug /system/bin/logcat -b all -f /sdcard/logcat_main_LOS15.txt -v threadtime
+    class main
+    user root
+    group system
+
+service radiolog_debug /system/bin/logcat -b radio -f /sdcard/locgcat_radio_LOS15.txt -v threadtime
+    class main
+    user root
+    group system
 
 on boot
     start rmt_storage
