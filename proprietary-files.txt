@@ -215,22 +215,13 @@ vendor/etc/hbtp/qtc800h_dsp30.bin
 vendor/etc/hbtp/qtc800s_dsp.bin
 vendor/etc/hbtp/qtc800s_dsp30.bin
 vendor/etc/hbtp/qtc801s.bin
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/etc/init/android.hardware.health@1.0-service.rc
-vendor/etc/init/android.hardware.ir@1.0-service.rc
-vendor/etc/init/android.hardware.light@2.0-service.rc
-vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/media_codecs_google_video_le.xml
-vendor/etc/mixer_paths_mtp.xml
 vendor/etc/msm_irqbalance_sdm630.conf
 vendor/etc/pa_ca_28db.wav
 vendor/etc/permissions/android.hardware.light.xml
 vendor/etc/permissions/android.hardware.vulkan.level-0.xml
 vendor/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
 vendor/etc/permissions/com.fingerprints.extension.xml
-vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/etc/pinknoise.wav
 vendor/etc/public.libraries.txt
 vendor/etc/qvr/ov7251_640x480_cam_config.xml
@@ -241,7 +232,6 @@ vendor/etc/qvr/qvrservice_6dof_config_stereo.xml
 vendor/etc/qvr/qvrservice_config.txt
 vendor/etc/receiver_playback.wav
 vendor/etc/scve/facereco/gModel.dat
-vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/silence.wav
 vendor/etc/silense.wav
 vendor/etc/speaker.ftcfg
@@ -264,8 +254,6 @@ bin/ebtables
 bin/exfatfsck
 bin/fdpp
 bin/fmconfig
-bin/fmfactorytest
-bin/fmfactorytestserver
 bin/host_manager_11ad
 #bin/install-recovery.sh
 bin/iwconfig
@@ -315,7 +303,6 @@ vendor/bin/capture_audio.sh
 vendor/bin/climax
 vendor/bin/consumerird
 vendor/bin/cplay
-vendor/bin/dd
 vendor/bin/diag_callback_sample
 vendor/bin/diag_dci_sample
 vendor/bin/diag_klog
@@ -329,7 +316,6 @@ vendor/bin/fstman
 vendor/bin/ftmdaemon
 vendor/bin/gamed
 vendor/bin/garden_app
-vendor/bin/getevent
 vendor/bin/hal_proxy_daemon
 vendor/bin/hhttest
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -338,7 +324,6 @@ vendor/bin/hw/android.hardware.health@1.0-service
 vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/bin/hw/android.hardware.light@2.0-service
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/bin/icm
 vendor/bin/iwpriv
 vendor/bin/loopback.sh
@@ -359,7 +344,6 @@ vendor/bin/mmi_diag
 vendor/bin/mmid
 vendor/bin/myftm
 vendor/bin/myftm.agent.sh
-vendor/bin/newfs_msdos
 vendor/bin/playback_audio.sh
 vendor/bin/qca6234-service.sh
 vendor/bin/qjpeg-dma-test
@@ -389,15 +373,9 @@ vendor/bin/xtra-daemon
 # missing lib
 lib/android.frameworks.displayservice@1.0.so
 lib/android.hardware.biometrics.fingerprint@2.1.so
-lib/android.hardware.health@1.0.so
-lib/android.hardware.tests.libhwbinder@1.0.so
-lib/android.hidl.base@1.0.so
-lib/com.qualcomm.qti.ant@1.0.so
 lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib/com.qualcomm.qti.imscmservice@1.1.so
-#lib/egl/libGLES_android.so
 lib/fm_helium.so
-lib/hw/android.hardware.tests.libhwbinder@1.0-impl.so
 lib/libFidoCryptoJNI.so
 lib/libFidoCrypto_system.so
 lib/libOmxMux.so
@@ -543,28 +521,18 @@ lib/modules/test-iosched.ko
 lib/modules/ufs_test.ko
 lib/modules/wil6210.ko
 lib/sensors.hal.tof.so
-lib/vendor.qti.hardware.factory@1.0.so
 lib/vendor.qti.hardware.limits@1.0.so
 lib/vendor.qti.hardware.vpp@1.1.so
-lib/vendor.xiaomi.hardware.mfidoca@1.0.so
-lib/vendor.xiaomi.hardware.mlipay@1.0.so
-lib/vendor.xiaomi.hardware.mtdservice@1.0.so
-lib/vendor.xiaomi.hardware.tidaservice@1.0.so
-lib/vendor.xiaomi.hardware.vsimapp@1.0.so
 
-vendor/lib/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.health@1.0-impl.so
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/consumerir.default.so
 vendor/lib/hw/fingerprint.goodix.default.so
 vendor/lib/hw/thermal.sdm660.so
 vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-rtpcommon.so
 vendor/lib/libAlacSwDec.so
@@ -702,14 +670,10 @@ vendor/lib/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Missing lib64
 lib64/android.hardware.biometrics.fingerprint@2.1.so
-lib64/android.hardware.tests.libhwbinder@1.0.so
-lib64/android.hidl.base@1.0.so
-lib64/com.qualcomm.qti.ant@1.0.so
 lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.1.so
 #lib64/egl/libGLES_android.so
 lib64/fm_helium.so
-lib64/hw/android.hardware.tests.libhwbinder@1.0-impl.so
 lib64/libCameraEffectJNI.so
 lib64/libFaceDetectCA.so
 lib64/libFidoCryptoJNI.so
@@ -908,29 +872,21 @@ lib64/libwigig_utils.so
 lib64/libwnndict.so
 lib64/libwrapnexpcmcalbody.so
 lib64/sensors.hal.tof.so
-lib64/vendor.qti.hardware.factory@1.0.so
 lib64/vendor.qti.hardware.limits@1.0.so
 lib64/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
-lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-lib64/vendor.xiaomi.hardware.tidaservice@1.0.so
 
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.health@1.0-impl.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFIDOKeyProvisioning.so
@@ -1021,11 +977,10 @@ vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Missing framework
-framework/QPerformance.jar
-framework/audiosphere.jar
-vendor/framework/com.fingerprints.extension.jar
-vendor/framework/vendor.qti.hardware.factory-V1.0-java.jar
-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+-framework/QPerformance.jar
+-framework/audiosphere.jar
+-vendor/framework/com.fingerprints.extension.jar
+-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 
 # Extra apks
 -vendor/app/CABLService/CABLService.apk
@@ -1035,3 +990,7 @@ vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 -vendor/app/SecProtect/SecProtect.apk
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 -vendor/app/QFingerprintService/QFingerprintService.apk
+
+
+vendor/media/LMspeed_508.emd
+vendor/media/PFFprec_600.emd

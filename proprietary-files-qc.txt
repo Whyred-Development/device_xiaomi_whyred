@@ -1,4 +1,6 @@
 # Alarm
+vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
+
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/power_off_alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -7,6 +9,8 @@ vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
+vendor/etc/init/android.hardware.audio@2.0-service.rc
+
 vendor/bin/hw/android.hardware.audio@2.0-service
 vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
 vendor/lib/hw/android.hardware.audio@2.0-impl.so
@@ -97,6 +101,7 @@ vendor/lib/soundfx/libvisualizer.so
 vendor/lib/soundfx/libvolumelistener.so
 
 # Bluetooth
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/btnvtool
 vendor/bin/hci_qcomm_init
@@ -105,6 +110,7 @@ vendor/bin/wcnss_filter
 -vendor/lib64/libbtnv.so
 
 # Camera
+vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 bin/mm-qcamera-daemon
 vendor/lib/hw/camera.sdm660.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
@@ -1009,30 +1015,6 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so
 
 # Display
-vendor/bin/hw/android.hardware.memtrack@1.0-service
-vendor/bin/hw/android.hardware.graphics.allocator@2.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.1-service
-vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.sdm660.so
-vendor/lib/hw/hwcomposer.sdm660.so
-vendor/lib/hw/memtrack.sdm660.so
-vendor/lib/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
-vendor/lib/vendor.display.config@1.0_vendor.so
-vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/gralloc.sdm660.so
-vendor/lib64/hw/hwcomposer.sdm660.so
-vendor/lib64/hw/memtrack.sdm660.so
-vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
-vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
-vendor/lib64/vendor.display.config@1.0_vendor.so
-
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdmextension.so
@@ -1074,6 +1056,14 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM
+vendor/etc/init/android.hardware.drm@1.0-service.rc
+vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+
+vendor/bin/hw/android.hardware.drm@1.0-service.widevine
+vendor/lib/libcppf.so
+vendor/lib/libwvhidl.so
+
 lib/vendor.qti.hardware.qteeconnector@1.0.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/android.hardware.drm@1.0-service
@@ -1125,11 +1115,8 @@ vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 
-
-# Factory
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-
 # FingerPrint
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 
 # FM
@@ -1143,6 +1130,7 @@ vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
 # Gatekeeper
+vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
@@ -1150,9 +1138,10 @@ vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib/hw/gatekeeper.sdm660.so
 
 # GPS
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc
+
 lib/vendor.qti.gnss@1.0.so
 lib64/vendor.qti.gnss@1.0.so
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib/vendor.qti.gnss@1.0_vendor.so
@@ -1306,8 +1295,9 @@ vendor/lib64/hw/vulkan.sdm660.so
 vendor/lib/hw/vulkan.sdm660.so
 
 # ESE-Powermanager
-vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
 vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
+
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
 lib/vendor.qti.esepowermanager@1.0.so
 lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib/vendor.qti.esepowermanager@1.0_vendor.so
@@ -1350,21 +1340,16 @@ vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0_vendor.so
 vendor/bin/ipacm-diag
 
 # IR
+vendor/etc/init/android.hardware.ir@1.0-service.rc
 vendor/bin/hw/android.hardware.ir@1.0-service
 vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 
 # Keystore
-vendor/bin/hw/android.hardware.configstore@1.0-service
-
 vendor/lib64/hw/keystore.sdm660.so
 vendor/lib/hw/keystore.sdm660.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@3.0-service
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
-
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -1373,6 +1358,8 @@ vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 
 # Light
+vendor/etc/init/android.hardware.light@2.0-service.rc
+
 vendor/bin/hw/android.hardware.light@2.0-service
 vendor/lib/hw/android.hardware.light@2.0-impl.so
 vendor/lib/hw/lights.sdm660.so
@@ -1385,6 +1372,9 @@ vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
 
 # Media
+vendor/etc/init/android.hardware.cas@1.0-service.rc
+vendor/etc/init/android.hardware.media.omx@1.0-service.rc
+
 vendor/bin/hw/android.hardware.cas@1.0-service
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 
@@ -1454,6 +1444,7 @@ vendor/lib64/libwms.so
 vendor/lib/libwms.so
 
 # Perf
+vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
 vendor/bin/pd-mapper
 vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
@@ -1497,6 +1488,11 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
+-vendor/app/SVIService/SVIService.apk
+
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/etc/init/vendor.display.color@1.0-service.rc
+
 lib/vendor.display.color@1.0.so
 lib/vendor.display.postproc@1.0.so
 lib/vendor.qti.hardware.qdutils_disp@1.0.so
@@ -1534,24 +1530,6 @@ vendor/lib64/libsdm-diag.so
 -vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
-
-# Power
-lib/android.hardware.power@1.0.so
-lib/android.hardware.power@1.1.so
-lib64/android.hardware.power@1.0.so
-lib64/android.hardware.power@1.1.so
-vendor/bin/hw/android.hardware.power@1.0-service
-
-vendor/etc/init/android.hardware.power@1.0-service.rc
-
-vendor/lib/hw/android.hardware.power@1.0-impl.so
-vendor/lib/hw/power.qcom.so
-vendor/lib64/hw/android.hardware.power@1.0-impl.so
-
-lib/libsuspend.so
-lib64/libsuspend.so
-vendor/lib/hw/power.qcom.so
-vendor/lib64/hw/power.qcom.so
 
 # QMI
 etc/permissions/qti_libpermissions.xml
@@ -1611,7 +1589,6 @@ vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
-vendor/bin/hw/rild
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
@@ -1715,10 +1692,10 @@ vendor/lib/lib-rtpsl.so
 vendor/lib/lib-rtpdaemoninterface.so
 
 # Sensor
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
+
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/bin/sensors.qcom
-
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
 
 vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
@@ -1748,6 +1725,8 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Thermal
+vendor/etc/init/android.hardware.thermal@1.0-service.rc
+
 vendor/bin/hw/android.hardware.thermal@1.0-service
 vendor/lib/hw/android.hardware.thermal@1.0-impl.so
 vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
@@ -1776,9 +1755,12 @@ vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
 
 # USB
+vendor/etc/init/android.hardware.usb@1.0-service.rc
+
 vendor/bin/hw/android.hardware.usb@1.0-service
 
 # Vibrator
+vendor/etc/init/android.hardware.vibrator@1.0-service.rc
 vendor/bin/hw/android.hardware.vibrator@1.0-service
 vendor/lib/hw/android.hardware.vibrator@1.0-impl.so
 vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so
@@ -1794,13 +1776,10 @@ vendor/lib/vendor.qti.voiceprint@1.0.so
 vendor/lib64/libqvop-service.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
-# Widevine
-vendor/bin/hw/android.hardware.drm@1.0-service.widevine
-vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
-vendor/lib/libcppf.so
-vendor/lib/libwvhidl.so
-
 # WiFi
+vendor/etc/init/android.hardware.wifi@1.0-service.rc
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
+
 vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
@@ -1882,3 +1861,14 @@ vendor/lib64/libwfdmmservice.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
+
+# Factory
+vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
+
+lib64/vendor.qti.hardware.factory@1.0.so
+
+vendor/etc/permissions/vendor.qti.hardware.factory.xml
+
+vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
+vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so
