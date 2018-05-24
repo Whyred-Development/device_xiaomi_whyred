@@ -9,17 +9,6 @@ vendor/lib/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Audio
-vendor/etc/init/android.hardware.audio@2.0-service.rc
-
-vendor/bin/hw/android.hardware.audio@2.0-service
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
-vendor/lib/hw/audio.primary.sdm660.so
-vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio@2.0-impl.so
-vendor/lib64/hw/audio.primary.sdm660.so
-
 lib64/libaudioclient.so
 lib64/libaudioeffect_jni.so
 lib64/libaudioflinger.so
@@ -101,8 +90,8 @@ vendor/lib/soundfx/libvisualizer.so
 vendor/lib/soundfx/libvolumelistener.so
 
 # Bluetooth
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
+lib/hw/bluetooth.default.so
+lib64/hw/bluetooth.default.so
 vendor/bin/btnvtool
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
@@ -111,7 +100,6 @@ vendor/bin/wcnss_filter
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-bin/mm-qcamera-daemon
 vendor/lib/hw/camera.sdm660.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 lib64/android.hardware.camera.common@1.0.so
@@ -1056,9 +1044,8 @@ vendor/lib/libdpmqmihal.so
 vendor/lib64/libdpmqmihal.so
 
 # DRM
-vendor/etc/init/android.hardware.drm@1.0-service.rc
-vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
+vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/lib/libcppf.so
@@ -1066,10 +1053,8 @@ vendor/lib/libwvhidl.so
 
 lib/vendor.qti.hardware.qteeconnector@1.0.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/bin/hw/android.hardware.drm@1.0-service
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/android.hardware.drm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0_vendor.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0_vendor.so
@@ -1116,6 +1101,22 @@ vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 
 # FingerPrint
+lib64/android.hardware.biometrics.fingerprint@2.1.so
+lib/android.hardware.biometrics.fingerprint@2.1.so
+
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib/hw/fingerprint.goodix.default.so
+
+vendor/lib64/libgf_hal.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/hw/fingerprint.fpc.default.so
+vendor/lib64/hw/fingerprint.goodix.default.so
+vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/libgoodixfingerprintd_binder.so
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 
@@ -1130,26 +1131,13 @@ vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
 # Gatekeeper
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib/hw/gatekeeper.sdm660.so
 
 # GPS
-vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-
-lib/vendor.qti.gnss@1.0.so
-lib64/vendor.qti.gnss@1.0.so
 vendor/bin/hw/vendor.qti.gnss@1.0-service
-vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib/vendor.qti.gnss@1.0_vendor.so
-vendor/lib/hw/android.hardware.gnss@1.0-impl-qti.so
+vendor/etc/init/vendor.qti.gnss@1.0-service.rc
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so
-vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so
-
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 -vendor/lib/libloc_api_v02.so
 -vendor/lib64/libloc_api_v02.so
@@ -1346,6 +1334,8 @@ vendor/lib/hw/android.hardware.ir@1.0-impl.so
 vendor/lib64/hw/android.hardware.ir@1.0-impl.so
 
 # Keystore
+lib/hw/keystore.default.so
+lib64/hw/keystore.default.so
 vendor/lib64/hw/keystore.sdm660.so
 vendor/lib/hw/keystore.sdm660.so
 
@@ -1431,7 +1421,6 @@ bin/seempd
 vendor/bin/ssr_setup
 vendor/bin/mtd
 bin/mtpd
-vendor/bin/mlid
 vendor/bin/qdmastatsd
 vendor/bin/qfp-daemon
 vendor/bin/seemp_healthd
@@ -1449,7 +1438,6 @@ vendor/bin/pd-mapper
 vendor/bin/energy-awareness
 vendor/bin/msm_irqbalance
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
-vendor/bin/system_perf_init
 lib/vendor.qti.hardware.iop@1.0.so
 lib/vendor.qti.hardware.iop@2.0.so
 lib/vendor.qti.hardware.perf@1.0.so
