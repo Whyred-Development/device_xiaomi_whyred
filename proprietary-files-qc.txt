@@ -1,6 +1,5 @@
 # Alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
-
 -vendor/app/PowerOffAlarm/PowerOffAlarm.apk
 vendor/bin/power_off_alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -1001,6 +1000,20 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0_vendor.so
 
 # Display
+
+lib/vendor.qti.hardware.qdutils_disp@1.0.so
+lib/vendor.qti.hardware.tui_comm@1.0.so
+lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
+
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdmextension.so
@@ -1040,6 +1053,7 @@ lib64/libdpmtcm.so
 vendor/bin/dpmQmiMgr
 vendor/lib/libdpmqmihal.so
 vendor/lib64/libdpmqmihal.so
+
 
 # DRM
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
@@ -1109,32 +1123,23 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 
 # FingerPrint
+
+framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 lib64/android.hardware.biometrics.fingerprint@2.1.so
 lib/android.hardware.biometrics.fingerprint@2.1.so
 
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib/hw/fingerprint.goodix.default.so
-vendor/lib64/libgf_hal.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/libgoodixfingerprintd_binder.so
 
 -vendor/framework/com.fingerprints.extension.jar
 
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
-etc/permissions/android.hardware.fingerprint.xml
-vendor/lib64/libgoodixfingerprintd_binder.so
 vendor/etc/permissions/com.fingerprints.extension.xml
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 -vendor/app/QFingerprintService/QFingerprintService.apk
@@ -1146,20 +1151,20 @@ vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
-vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
-vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.sdm660.so
 vendor/lib/hw/gatekeeper.sdm660.so
 
 # GPS
+lib/vendor.qti.gnss@1.0.so
+lib64/vendor.qti.gnss@1.0.so
 vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc
-vendor/lib64/vendor.qti.gnss@1.0_vendor.so
-vendor/lib/vendor.qti.gnss@1.0_vendor.so
 vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
+vendor/lib/vendor.qti.gnss@1.0_vendor.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 -vendor/lib/libloc_api_v02.so
 -vendor/lib64/libloc_api_v02.so
@@ -1382,6 +1387,9 @@ vendor/bin/hw/android.hardware.cas@1.0-service
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 
 lib/vendor.qti.hardware.vpp@1.1.so
+lib64/vendor.qti.hardware.vpp@1.1.so
+vendor/lib/vendor.qti.hardware.vpp@1.1_vendor.so
+vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
 
 lib/libmmosal.so
 lib64/libmmosal.so
@@ -1576,14 +1584,31 @@ vendor/lib/libqmiservices.so
 vendor/lib/libsmemlog.so
 
 # Radio
+vendor/lib/vendor.qti.hardware.radio.am@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.lpa@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.uim@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.am@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.uim@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
+
 -app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
+-framework/embmslibrary.jar
+-framework/qcrilhook.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 etc/permissions/embms.xml
 etc/permissions/qcrilhook.xml
 etc/permissions/telephonyservice.xml
-framework/embmslibrary.jar
--framework/qcrilhook.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
 vendor/bin/port-bridge
@@ -1609,6 +1634,18 @@ vendor/lib64/libsystem_health_mon.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
+lib/com.qualcomm.qti.imscmservice@1.0.so
+lib/vendor.qti.imsrtpservice@1.0.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@1.0.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
+vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
+vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
+vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
+
 -app/ims/ims.apk
 -app/imssettings/imssettings.apk
 -app/uceShimService/uceShimService.apk
@@ -1667,6 +1704,9 @@ vendor/lib/lib-rtpsl.so
 vendor/lib/lib-rtpdaemoninterface.so
 
 # Sensor
+vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 lib64/libsensor1.so
 lib64/libsensor_reg.so
@@ -1693,11 +1733,6 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Thermal
-vendor/etc/init/android.hardware.thermal@1.0-service.rc
-
-vendor/bin/hw/android.hardware.thermal@1.0-service
-vendor/lib/hw/android.hardware.thermal@1.0-impl.so
-vendor/lib64/hw/android.hardware.thermal@1.0-impl.so
 
 vendor/lib64/hw/thermal.sdm660.so
 vendor/bin/thermal-engine
@@ -1714,25 +1749,6 @@ vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 
-# TUI
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-lib/vendor.qti.hardware.tui_comm@1.0.so
-lib64/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib/vendor.qti.hardware.tui_comm@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0_vendor.so
-
-# USB
-vendor/etc/init/android.hardware.usb@1.0-service.rc
-
-vendor/bin/hw/android.hardware.usb@1.0-service
-
-# Vibrator
-vendor/etc/init/android.hardware.vibrator@1.0-service.rc
-vendor/bin/hw/android.hardware.vibrator@1.0-service
-vendor/lib/hw/android.hardware.vibrator@1.0-impl.so
-vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so
-
 # Voice fingerprint
 vendor/bin/qvop-daemon
 vendor/etc/qvop/antispoofing.bin
@@ -1747,7 +1763,7 @@ vendor/lib64/vendor.qti.voiceprint@1.0.so
 # WiFi
 vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-
+lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
