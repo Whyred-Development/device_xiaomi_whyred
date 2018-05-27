@@ -120,11 +120,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.bluetooth@1.0-service-qti \
     libbt-vendor \
-    libbthost_if \
-    bt-mac-generator
 
 # Camera
 #PRODUCT_PACKAGES += \
@@ -200,20 +198,15 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service.widevine
 
 # Fingerprint sensor
-#PRODUCT_PACKAGES += \
-#    fingerprint.sdm660 \
-#    android.hardware.biometrics.fingerprint@2.0-service.xiaomi_whyred
-
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service
 # FM
-#PRODUCT_PACKAGES += \
-#    FMRadio \
-#    libfmjni
+PRODUCT_PACKAGES += \
+    FMRadio \
+    libfmjni
 
-#PRODUCT_PACKAGES += \
- #   android.hardware.broadcastradio@1.0-impl
+PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
@@ -248,7 +241,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-#    android.hidl.manager@1.0 \
+    android.hidl.manager@1.0 \
 #    android.hidl.manager@1.0-java
 
 # IDC

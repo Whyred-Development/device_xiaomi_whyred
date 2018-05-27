@@ -167,7 +167,6 @@ etc/perf/whitelistedapps.xml
 etc/permissions/LteDirectDiscovery.xml
 etc/permissions/RemoteSimlock.xml
 etc/permissions/android.hardware.ethernet.xml
-etc/permissions/android.hardware.fingerprint.xml
 etc/permissions/android.software.midi.xml
 etc/permissions/audiosphere.xml
 etc/permissions/btmultisim.xml
@@ -221,7 +220,6 @@ vendor/etc/pa_ca_28db.wav
 vendor/etc/permissions/android.hardware.light.xml
 vendor/etc/permissions/android.hardware.vulkan.level-0.xml
 vendor/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
-vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/etc/pinknoise.wav
 vendor/etc/public.libraries.txt
 vendor/etc/qvr/ov7251_640x480_cam_config.xml
@@ -439,12 +437,8 @@ lib/modules/test-iosched.ko
 lib/modules/ufs_test.ko
 lib/modules/wil6210.ko
 lib/sensors.hal.tof.so
-lib/vendor.qti.hardware.limits@1.0.so
-lib/vendor.qti.hardware.vpp@1.1.so
 
 vendor/lib/hw/consumerir.default.so
-vendor/lib/hw/fingerprint.goodix.default.so
-vendor/lib/hw/thermal.sdm660.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-rtpcommon.so
 vendor/lib/libAlacSwDec.so
@@ -567,13 +561,6 @@ vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
 vendor/lib/libvqzip.so
-vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/modules/qca_cld3/qca_cld3_wlan.ko
-vendor/lib/qcdrm/playready/lib/drm/libdrmprplugin_customer.so
-vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 
 # Missing lib64
 #lib64/egl/libGLES_android.so
@@ -778,9 +765,6 @@ lib64/libwrapnexpcmcalbody.so
 lib64/sensors.hal.tof.so
 
 vendor/lib64/hw/consumerir.default.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/hw/fingerprint.fpc.default.so
-vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFIDOKeyProvisioning.so
@@ -807,9 +791,6 @@ vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixfingerprintd_binder.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libmfido.so
 vendor/lib64/libmlipay.so
@@ -863,7 +844,6 @@ vendor/lib64/libvpptestutils.so
 # Missing framework
 -framework/QPerformance.jar
 -framework/audiosphere.jar
--vendor/framework/com.fingerprints.extension.jar
 -vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 
 # Extra apks
@@ -872,8 +852,6 @@ vendor/lib64/libvpptestutils.so
 -vendor/app/QDMA-UI/QDMA-UI.apk
 -vendor/app/QDMA/QDMA.apk
 -vendor/app/SecProtect/SecProtect.apk
--vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
--vendor/app/QFingerprintService/QFingerprintService.apk
 
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd
