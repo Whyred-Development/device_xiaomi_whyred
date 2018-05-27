@@ -252,10 +252,10 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/init/vendor,$(TARGET_COPY_OUT_VENDOR))
 
 # IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
+#PRODUCT_PACKAGES += \
+#    ebtables \
+#    ethertypes \
+#    libebtc
 
 # IRQ
 PRODUCT_COPY_FILES += \
