@@ -1137,6 +1137,9 @@ vendor/lib/hw/gatekeeper.sdm660.so
 # GPS
 vendor/bin/hw/vendor.qti.gnss@1.0-service
 vendor/etc/init/vendor.qti.gnss@1.0-service.rc
+vendor/lib64/vendor.qti.gnss@1.0_vendor.so
+vendor/lib/vendor.qti.gnss@1.0_vendor.so
+vendor/lib/hw/vendor.qti.gnss@1.0-impl.so
 vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 -vendor/lib/libloc_api_v02.so
@@ -1346,15 +1349,6 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
-
-# Light
-vendor/etc/init/android.hardware.light@2.0-service.rc
-
-vendor/bin/hw/android.hardware.light@2.0-service
-vendor/lib/hw/android.hardware.light@2.0-impl.so
-vendor/lib/hw/lights.sdm660.so
-vendor/lib64/hw/android.hardware.light@2.0-impl.so
-vendor/lib64/hw/lights.sdm660.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.sdm660.so
@@ -1680,13 +1674,6 @@ vendor/lib/lib-rtpsl.so
 vendor/lib/lib-rtpdaemoninterface.so
 
 # Sensor
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
-
-vendor/bin/hw/android.hardware.sensors@1.0-service
-vendor/bin/sensors.qcom
-
-vendor/lib/hw/android.hardware.sensors@1.0-impl.so
-vendor/lib64/hw/android.hardware.sensors@1.0-impl.so
 
 lib64/libsensor1.so
 lib64/libsensor_reg.so

@@ -75,7 +75,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 BOARD_USES_QCOM_HARDWARE := true
 
 # ANT+
-#BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
+BOARD_ANT_WIRELESS_DEVICE := "qualcomm-uart"
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
@@ -271,6 +271,8 @@ PROTOBUF_SUPPORTED := true
 include device/qcom/sepolicy/sepolicy.mk
 include device/qcom/sepolicy/legacy-sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Timeservice
 BOARD_USES_QC_TIME_SERVICES := true

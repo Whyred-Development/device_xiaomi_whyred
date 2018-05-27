@@ -275,50 +275,24 @@ vendor/bin/ftmdaemon
 vendor/bin/gamed
 vendor/bin/garden_app
 vendor/bin/hal_proxy_daemon
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/bin/hw/android.hardware.health@1.0-service
-vendor/bin/hw/android.hardware.ir@1.0-service
-vendor/bin/hw/android.hardware.light@2.0-service
-vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
+
 vendor/bin/icm
 vendor/bin/iwpriv
-vendor/bin/loopback.sh
-vendor/bin/mmi
-vendor/bin/mmi_agent32
-vendor/bin/mmi_agent64
-vendor/bin/mmi_debug
-vendor/bin/mmi_diag
-vendor/bin/mmid
 vendor/bin/myftm
 vendor/bin/myftm.agent.sh
 vendor/bin/playback_audio.sh
 vendor/bin/qca6234-service.sh
 vendor/bin/qjpeg-dma-test
-vendor/bin/resize_ext4
 vendor/bin/smart-pa-cal
 vendor/bin/smart-pa-tfa-cal
 vendor/bin/subsystem_ramdump
 vendor/bin/tbaseLoader
-vendor/bin/test_diag
 vendor/bin/ti_audio
 vendor/bin/tidad
-vendor/bin/tinyhostless
-vendor/bin/toolbox_vendor
-vendor/bin/vendor_cmd_tool
 vendor/bin/vsimd
-vendor/bin/wdsdaemon
-vendor/bin/wifisarfar
-vendor/bin/wifisarnear
-vendor/bin/wifitest.sh
-vendor/bin/wifitest_close.sh
 vendor/bin/xtra-daemon
 
 # missing lib
-lib/android.frameworks.displayservice@1.0.so
-lib/android.hardware.biometrics.fingerprint@2.1.so
-lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-lib/com.qualcomm.qti.imscmservice@1.1.so
 lib/fm_helium.so
 lib/libFidoCryptoJNI.so
 lib/libFidoCrypto_system.so
@@ -468,15 +442,9 @@ lib/sensors.hal.tof.so
 lib/vendor.qti.hardware.limits@1.0.so
 lib/vendor.qti.hardware.vpp@1.1.so
 
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
-vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so
-vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/consumerir.default.so
 vendor/lib/hw/fingerprint.goodix.default.so
 vendor/lib/hw/thermal.sdm660.so
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib/lib-dplmedia.so
 vendor/lib/lib-rtpcommon.so
 vendor/lib/libAlacSwDec.so
@@ -606,16 +574,8 @@ vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
 vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib/vendor.qti.hardware.limits@1.0_vendor.so
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib/vendor.qti.hardware.vpp@1.1_vendor.so
-vendor/lib/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Missing lib64
-lib64/android.hardware.biometrics.fingerprint@2.1.so
-lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
-lib64/com.qualcomm.qti.imscmservice@1.1.so
 #lib64/egl/libGLES_android.so
 lib64/fm_helium.so
 lib64/libCameraEffectJNI.so
@@ -816,21 +776,11 @@ lib64/libwigig_utils.so
 lib64/libwnndict.so
 lib64/libwrapnexpcmcalbody.so
 lib64/sensors.hal.tof.so
-lib64/vendor.qti.hardware.limits@1.0.so
-lib64/vendor.qti.hardware.vpp@1.1.so
-lib64/vendor.qti.hardware.wifi.keystore@1.0.so
 
-vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
-vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.health@1.0-impl.so
-vendor/lib64/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib64/hw/consumerir.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libFIDOKeyProvisioning.so
@@ -904,21 +854,11 @@ vendor/lib64/libtida.so
 vendor/lib64/libts_detected_face_hal.so
 vendor/lib64/libts_face_beautify_hal.so
 vendor/lib64/libubifocus.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/libvideobokeh.so
 vendor/lib64/libvideoutils.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/libvpplibrary.so
 vendor/lib64/libvpptestutils.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/vendor.qti.hardware.limits@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
-vendor/lib64/vendor.qti.hardware.vpp@1.1_vendor.so
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.wifi.supplicant@1.0_vendor.so
-vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so
 
 # Missing framework
 -framework/QPerformance.jar
@@ -934,7 +874,6 @@ vendor/lib64/vendor.qti.hardware.wipower@1.0_vendor.so
 -vendor/app/SecProtect/SecProtect.apk
 -vendor/app/FingerprintExtensionService/FingerprintExtensionService.apk
 -vendor/app/QFingerprintService/QFingerprintService.apk
-
 
 vendor/media/LMspeed_508.emd
 vendor/media/PFFprec_600.emd

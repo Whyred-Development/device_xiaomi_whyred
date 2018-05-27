@@ -75,7 +75,7 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
@@ -94,7 +94,7 @@ PRODUCT_PACKAGES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/audio_tuning_mixer_tasha.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer_tasha.txt \
@@ -110,17 +110,17 @@ PRODUCT_COPY_FILES += \
     $(TOPDIR)frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 # ANT+
-#PRODUCT_PACKAGES += \
-#    AntHalService \
-#    com.dsi.ant.antradio_library \
-#    libantradio
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library \
+    libantradio
 
-#PRODUCT_COPY_FILES += \
-#    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
+PRODUCT_COPY_FILES += \
+    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.dsi.ant.antradio_library.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.bluetooth@1.0-impl \
     android.hardware.bluetooth@1.0-service \
     libbt-vendor \
     libbthost_if \
@@ -142,7 +142,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor
 
 # Connectivity Engine support (CNE)
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne \
     services-ext
@@ -222,7 +222,6 @@ PRODUCT_PACKAGES += \
 
 # GPS / Location
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.0-impl-qti \
     android.hardware.gnss@1.0-service-qti \
     libgnss \
@@ -289,12 +288,12 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service
 
 # Lights
-#PRODUCT_PACKAGES += \
-#    lights.sdm660
+PRODUCT_PACKAGES += \
+    lights.sdm660
 
-#PRODUCT_PACKAGES += \
-#    android.hardware.light@2.0-impl \
-#    android.hardware.light@2.0-service
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service
 
 # LiveDisplay native
 #PRODUCT_PACKAGES += \
@@ -349,8 +348,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.qcom \
     android.hardware.power@1.1-service-qti \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
@@ -396,10 +393,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # Sensors
-#PRODUCT_PACKAGES += \
-#    sendors.sdm660 \
-#    android.hardware.sensors@1.0-impl \
-#    android.hardware.sensors@1.0-service
+PRODUCT_PACKAGES += \
+    sendors.qcom \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
@@ -417,10 +414,10 @@ PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
 # Thermal
-#PRODUCT_PACKAGES += \
-#    android.hardware.thermal@1.0-impl \
-#    android.hardware.thermal@1.0-service \
-#    thermal.sdm660
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service \
+    thermal.sdm660
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
