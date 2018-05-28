@@ -128,6 +128,7 @@ on boot
     chown system system /persist/speccfg/partition
 
 #Load WLAN driver
+   chown wifi wifi /sys/module/wlan/parameters/fwpath
    insmod /vendor/lib/modules/qca_cld3/qca_cld3_wlan.ko
    setprop wlan.driver.status "ok"
 
