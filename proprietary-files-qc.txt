@@ -1136,14 +1136,21 @@ vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
 vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
 
 # FingerPrint
+vendor/bin/qfp-daemon
 
-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libqfp-service.so
+
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
+
+-framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
+
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
-
 lib64/android.hardware.biometrics.fingerprint@2.1.so
 lib/android.hardware.biometrics.fingerprint@2.1.so
-
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
@@ -1648,16 +1655,26 @@ vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
 lib/com.qualcomm.qti.imscmservice@1.0.so
+lib/com.qualcomm.qti.imscmservice@1.1.so
+lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@1.1.so
 lib/vendor.qti.imsrtpservice@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so
 lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@1.1.so
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
+vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so
+vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
+
+etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/qti-vzw-ims-internal.xml
 
 -app/ims/ims.apk
 -app/imssettings/imssettings.apk
@@ -1674,6 +1691,7 @@ lib64/lib-imsvtextutils.so
 lib64/libimsmedia_jni.so
 lib64/libmmrtpdecoder.so
 lib64/libmmrtpencoder.so
+lib64/libdiag_system.so
 
 lib/libmmrtpdecoder.so
 lib/libmmrtpencoder.so
@@ -1686,6 +1704,7 @@ lib/lib-imsvideocodec.so
 lib/lib-imsvtutils.so
 lib/libimscamera_jni.so
 lib/lib-imsvtextutils.so
+lib/libdiag_system.so
 
 vendor/bin/imsqmidaemon
 vendor/bin/ims_rtp_daemon
@@ -1717,7 +1736,7 @@ vendor/lib/lib-rtpsl.so
 vendor/lib/lib-rtpdaemoninterface.so
 
 # Sensor
-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+-vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
@@ -1746,8 +1765,6 @@ vendor/lib/sensor_calibrate.so
 vendor/lib/sensors.ssc.so
 
 # Thermal
-
-vendor/lib64/hw/thermal.sdm660.so
 vendor/bin/thermal-engine
 vendor/etc/thermal-engine.conf
 lib64/libthermalcallback.so

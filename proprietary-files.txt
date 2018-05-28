@@ -272,7 +272,6 @@ vendor/bin/fstman
 vendor/bin/ftmdaemon
 vendor/bin/gamed
 vendor/bin/garden_app
-vendor/bin/hal_proxy_daemon
 
 vendor/bin/icm
 vendor/bin/iwpriv
@@ -287,7 +286,6 @@ vendor/bin/subsystem_ramdump
 vendor/bin/tbaseLoader
 vendor/bin/ti_audio
 vendor/bin/tidad
-vendor/bin/vsimd
 vendor/bin/xtra-daemon
 
 # missing lib
@@ -316,7 +314,7 @@ lib/libcdsprpc.so
 lib/libcert_parse.so
 lib/libchromaflash.so
 lib/libcurl.so
-lib/libdiag_system.so
+
 lib/libdisplayconfig.so
 lib/libebtc.so
 lib/libexmedia.so
@@ -365,7 +363,6 @@ lib/liboctvm_drv.so
 lib/liboctvm_runtime.so
 lib/liboctvm_utils.so
 lib/liboptizoom.so
-lib/libpowerkeeper_jni.so
 lib/libqcomfm_jni.so
 lib/libqct_resampler.so
 lib/libqmi_cci_system.so
@@ -416,7 +413,6 @@ lib/libvr_object_engine.so
 lib/libvr_sam_wrapper.so
 lib/libvraudio.so
 lib/libvraudio_client.so
-lib/libvsim.so
 lib/libwapi_cert.so
 lib/libwhetstone_jni.so
 lib/libwhetstone_sdk.so
@@ -519,7 +515,6 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqti-gt-prop.so
 vendor/lib/libqti-utils.so
-vendor/lib/librecovery_updater_msm.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libril-qc-hal-qmi.so
 vendor/lib/libril-qc-ltedirectdisc.so
@@ -609,7 +604,7 @@ lib64/libchromaflash.so
 lib64/libclearsight.so
 lib64/libcurl.so
 lib64/libdce-1.1.17-mfr.so
-lib64/libdiag_system.so
+
 lib64/libdict-parser.so
 lib64/libdisplayconfig.so
 lib64/libebt_802_3.so
@@ -681,7 +676,6 @@ lib64/libmorpho_panorama.so
 lib64/libmorpho_panorama_gp.so
 lib64/libmp3lame.so
 lib64/libmtk_serialnum.so
-lib64/libnap.so
 lib64/libnexcralbody_mc_jb.so
 lib64/libnexeditorsdk.so
 lib64/libnexralbody_audio.so
@@ -691,7 +685,6 @@ lib64/liboctvm_drv.so
 lib64/liboctvm_runtime.so
 lib64/liboctvm_utils.so
 lib64/liboptizoom.so
-lib64/libpowerkeeper_jni.so
 lib64/libqcomfm_jni.so
 lib64/libqmi_cci_system.so
 lib64/libqsap_sdk.so
@@ -751,7 +744,6 @@ lib64/libvr_object_engine.so
 lib64/libvr_sam_wrapper.so
 lib64/libvraudio.so
 lib64/libvraudio_client.so
-lib64/libvsim_auth.so
 lib64/libwapi_cert.so
 lib64/libwhetstone_jni.so
 lib64/libwhetstone_sdk.so
@@ -806,7 +798,6 @@ vendor/lib64/libmt.so
 vendor/lib64/liboptizoom.so
 vendor/lib64/libpvr.so
 vendor/lib64/libqcrilFramework.so
-vendor/lib64/libqfp-service.so
 vendor/lib64/libqti-gt-prop.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/librecovery_updater_msm.so
@@ -844,7 +835,6 @@ vendor/lib64/libvpptestutils.so
 # Missing framework
 -framework/QPerformance.jar
 -framework/audiosphere.jar
--vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
 
 # Extra apks
 -vendor/app/CABLService/CABLService.apk
