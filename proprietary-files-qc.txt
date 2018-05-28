@@ -1765,10 +1765,8 @@ vendor/lib64/libqvop-service.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # WiFi
-vendor/etc/init/android.hardware.wifi@1.0-service.rc
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 lib64/vendor.qti.hardware.wifi.keystore@1.0.so
-vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/cnss-daemon
 vendor/bin/cnss_diag
 
