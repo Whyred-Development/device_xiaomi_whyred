@@ -97,14 +97,15 @@ vendor/bin/wcnss_filter
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/camera.sdm660.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
+lib64/android.frameworks.displayservice@1.0.so
 lib64/android.hardware.camera.common@1.0.so
 lib64/android.hardware.camera.device@1.0.so
 lib64/android.hardware.camera.device@3.2.so
 lib64/android.hardware.camera.device@3.3.so
 lib64/android.hardware.camera.provider@2.4.so
 lib64/vendor.qti.hardware.camera.device@1.0.so
+lib/android.frameworks.displayservice@1.0.so
 lib/android.hardware.camera.common@1.0.so
 lib/android.hardware.camera.device@1.0.so
 lib/android.hardware.camera.device@3.2.so
@@ -115,11 +116,14 @@ vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl.so
 vendor/lib/camera.device@3.3-impl.so
 vendor/lib/vendor.qti.hardware.camera.device@1.0_vendor.so
-vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
 vendor/lib64/camera.device@3.3-impl.so
 vendor/lib64/vendor.qti.hardware.camera.device@1.0_vendor.so
+
+vendor/lib/hw/camera.sdm660.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
 vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
 
 lib/libcamera2ndk.so
