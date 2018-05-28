@@ -120,8 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl-qti \
-    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.bluetooth@1.0 \
     libbt-vendor \
 
 # Camera

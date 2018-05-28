@@ -89,11 +89,20 @@ vendor/lib/soundfx/libvisualizer.so
 vendor/lib/soundfx/libvolumelistener.so
 
 # Bluetooth
-vendor/bin/btnvtool
+lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/bin/hci_qcomm_init
 vendor/bin/wcnss_filter
--vendor/lib/libbtnv.so
--vendor/lib64/libbtnv.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
+vendor/lib/libbtnv.so
+vendor/lib/libbt-hidlclient.so
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0_vendor.so
+vendor/lib64/libbtnv.so
+vendor/lib64/libbt-hidlclient.so
 
 # Camera
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
