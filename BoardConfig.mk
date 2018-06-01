@@ -248,7 +248,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_PER_MGR_ENABLED := true
 
 # Power
-#TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input2/wake_gesture"
 #TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
