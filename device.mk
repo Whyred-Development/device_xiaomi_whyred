@@ -142,6 +142,8 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
     camera.sdm660 \
     libmm-qcamera \
+    
+    PRODUCT_PACKAGES += \
     Snap
 
 #PRODUCT_PACKAGES += \
