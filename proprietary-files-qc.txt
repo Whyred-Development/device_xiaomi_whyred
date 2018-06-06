@@ -20,6 +20,9 @@ vendor/lib64/com.qualcomm.qti.ant@1.0_vendor.so
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
+vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg
+vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg
+
 lib64/libaudioclient.so
 lib64/libaudioeffect_jni.so
 lib64/libaudioflinger.so
@@ -169,7 +172,6 @@ lib64/libmorpho_panorama_gp.so
 lib64/libCameraEffectJNI.so
 lib64/libFaceDetectCA.so
 lib64/libfiltergenerator.so
-lib64/libfilterpack_facedetect.so
 lib64/libdualcameraddm.so
 lib64/libjni_dualcamera.so
 vendor/lib/libarcsoft_beauty_shot.so
@@ -268,6 +270,11 @@ vendor/lib/libmmcamera_whyred_s5k5e8_ofilm_i.so
 vendor/lib/libmmcamera_whyred_s5k5e8_ofilm_i_eeprom.so
 vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii.so
 vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii_eeprom.so
+vendor/lib/libsymphonypower.so
+vendor/lib/libsymphony-cpu.so
+vendor/lib/libVDClearShot.so
+vendor/lib/libgnustl_shared.so
+vendor/lib/libcamera_scene.so
 
 # Camera (etc)
 vendor/etc/camera/MIUI_Time.ttf
@@ -769,6 +776,15 @@ vendor/lib/libchromatix_whyred_s5k5e8_qtech_global_ii_snapshot.so
 vendor/lib/libchromatix_whyred_s5k5e8_qtech_global_ii_video_full.so
 vendor/lib/libchromatix_whyred_s5k5e8_qtech_global_ii_zsl_preview.so
 vendor/lib/libchromatix_whyred_s5k5e8_qtech_global_ii_zsl_video.so
+vendor/lib/libchromatix_whyred_imx376_ofilm_global_i_cpp_snapshot_5M_hht.so
+vendor/lib/libchromatix_whyred_imx376_ofilm_global_i_cpp_snapshot_hht.so
+vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_cpp_snapshot_5M_hht.so
+vendor/lib/libchromatix_whyred_imx376_sunny_global_ii_cpp_snapshot_hht.so
+vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_bokeh_preview.so
+vendor/lib/libchromatix_whyred_imx486_ofilm_global_i_cpp_snapshot_hht.so
+vendor/lib/libchromatix_whyred_imx486_qtech_global_ii_bokeh_preview.so
+vendor/lib/libchromatix_whyred_s5k2l7_ofilm_cn_i_bokeh_snapshot.so
+vendor/lib/libchromatix_whyred_s5k2l7_qtech_cn_ii_bokeh_snapshot.so
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -926,9 +942,7 @@ vendor/lib/libtzdrmgenprov.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libQTEEConnector_vendor.so
 
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
@@ -988,6 +1002,7 @@ vendor/etc/permissions/com.fingerprints.extension.xml
 -vendor/app/QFingerprintService/QFingerprintService.apk
 
 # FM
+etc/init/init.qti.fm.rc
 -lib/vendor.qti.hardware.fm@1.0.so
 -lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -1281,6 +1296,12 @@ vendor/lib/libOmxVenc.so
 vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
+lib64/libstagefright_httplive.so
+lib64/libstagefright_soft_aacdec.so
+lib64/libstagefright_soft_aacenc.so
+lib64/libstagefright_soft_qtiflacdec.so
+lib64/libstagefright_wfd.so
+lib/libstagefright_soft_qtiflacdec.so
 
 # Misc
 bin/seempd

@@ -148,12 +148,6 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/Diag.cfg
 
 # Missing etc
--etc/WhetstonePermission/WhetstonePermission.apk
-etc/appmanager.conf
-etc/appops_policy.xml
-etc/audio_policy.conf
-etc/bluetooth/bt_profile.conf
-etc/bluetooth/interop_database.conf
 etc/calib.cfg
 etc/cdma_call_conf.xml
 etc/device_features/whyred.xml
@@ -169,52 +163,29 @@ etc/firmware/goodixfp.b06
 etc/firmware/goodixfp.b07
 etc/firmware/goodixfp.mdt
 
-etc/hostapd/hostapd.accept
-etc/hostapd/hostapd.deny
-etc/hostapd/hostapd_default.conf
-etc/init/init.qti.fm.rc
-etc/install_app_filter.xml
-etc/iwpriv.agent.sh
-etc/mcd_default.conf
-etc/perf/whitelistedapps.xml
-etc/permissions/LteDirectDiscovery.xml
-etc/permissions/RemoteSimlock.xml
-etc/permissions/android.hardware.ethernet.xml
-etc/permissions/android.software.midi.xml
 etc/permissions/audiosphere.xml
 etc/permissions/btmultisim.xml
-etc/permissions/com.google.android.maps.xml
-etc/permissions/com.google.android.media.effects.xml
+
+
 etc/permissions/com.qrd.wappush.xml
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
 etc/permissions/com.wapi.wapicertstore.xml
-etc/permissions/globalpersonalassistant_permission.xml
-etc/permissions/handheld_core_hardware.xml
-etc/permissions/lpa.xml
-etc/permissions/privapp-permissions-google.xml
-etc/permissions/privapp-permissions-qti.xml
+
 etc/permissions/qti-vzw-ims-internal.xml
 etc/permissions/settings-aapt2-lib-rename.xml
 etc/permissions/uimremoteclient.xml
 etc/permissions/vendor-qti-hardware-alarm.xml
-etc/permissions/version-seperation.xml
-etc/permissions/whetstone_permissions.xml
-etc/preferred-apps/google.xml
+
 etc/scve/facereco/gModel.dat
 etc/spn-conf.xml
-etc/sysconfig/google.xml
-etc/yellowpage/IN/ivr.zip
+
 vendor/etc/apdr.conf
 vendor/etc/appboosts.xml
-vendor/etc/audio/audio_policy_configuration.xml
-vendor/etc/audio_platform_info_extcodec.xml
-vendor/etc/audio_platform_info_skush.xml
 vendor/etc/drc/drc_cfg_5.1.txt
 vendor/etc/drc/drc_cfg_AZ.txt
-vendor/etc/ftm_test_config
+
 vendor/etc/gamedwhitelist.xml
-vendor/etc/graphite_ipc_platform_info.xml
 vendor/etc/hbtp/hbtpcfg_adsp_800s_fhd.dat
 vendor/etc/hbtp/hbtpcfg_sdm630_800s_fhd.dat
 vendor/etc/hbtp/hbtpcfg_sdm660_800h_qhd.dat
@@ -230,9 +201,6 @@ vendor/etc/hbtp/qtc801s.bin
 vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/msm_irqbalance_sdm630.conf
 vendor/etc/pa_ca_28db.wav
-vendor/etc/permissions/android.hardware.light.xml
-vendor/etc/permissions/android.hardware.vulkan.level-0.xml
-vendor/etc/permissions/android.hardware.vulkan.version-1_0_3.xml
 vendor/etc/pinknoise.wav
 vendor/etc/public.libraries.txt
 vendor/etc/qvr/ov7251_640x480_cam_config.xml
@@ -243,13 +211,9 @@ vendor/etc/qvr/qvrservice_6dof_config_stereo.xml
 vendor/etc/qvr/qvrservice_config.txt
 vendor/etc/receiver_playback.wav
 vendor/etc/scve/facereco/gModel.dat
-vendor/etc/silence.wav
-vendor/etc/silense.wav
+
 vendor/etc/speaker.ftcfg
-vendor/etc/speaker_playback.wav
-vendor/etc/spk_pb.wav
-vendor/etc/sweep.wav
-vendor/etc/whitelistedapps.xml
+
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/fstman.ini
 vendor/etc/wifi/wifi_concurrency_cfg.txt
@@ -258,7 +222,6 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 # Missing bin
 vendor/bin/DR_AP_Service
 vendor/bin/LKCore
-vendor/bin/LctDiagSendData
 vendor/bin/PktRspTest
 vendor/bin/SoterProvisioningTool
 vendor/bin/StoreKeybox
@@ -287,10 +250,7 @@ vendor/bin/garden_app
 
 vendor/bin/icm
 vendor/bin/iwpriv
-vendor/bin/myftm
-vendor/bin/myftm.agent.sh
-vendor/bin/playback_audio.sh
-vendor/bin/qca6234-service.sh
+
 vendor/bin/qjpeg-dma-test
 vendor/bin/smart-pa-cal
 vendor/bin/smart-pa-tfa-cal
@@ -328,7 +288,7 @@ lib/libchromaflash.so
 lib/libcurl.so
 
 lib/libdisplayconfig.so
-lib/libebtc.so
+
 lib/libexmedia.so
 lib/libfastcvadsp_stub.so
 lib/libfastcvopt.so
@@ -362,8 +322,6 @@ lib/liblistenjni.so
 lib/liblistensoundmodel2.so
 lib/liblogwrap.so
 lib/libmdsprpc.so
-lib/libminui.so
-
 lib/libmp3lame.so
 lib/libnvinterface.so
 lib/liboctvm.so
@@ -407,8 +365,6 @@ lib/libseestraight.so
 lib/libshell.so
 lib/libshell_jni.so
 lib/libsparse.so
-lib/libstagefright_soft_qtiflacdec.so
-lib/libthemeutils_jni.so
 lib/libtrueportrait.so
 lib/libtruescanner.so
 lib/libts_detected_face_jni.so
@@ -421,24 +377,11 @@ lib/libvr_sam_wrapper.so
 lib/libvraudio.so
 lib/libvraudio_client.so
 lib/libwapi_cert.so
-lib/libwhetstone_jni.so
-lib/libwhetstone_sdk.so
 lib/libwificond_ipc.so
 lib/libwigig_flashaccess.so
 lib/libwigig_pciaccess.so
 lib/libwigig_utils.so
 lib/libwnndict.so
-lib/libyoga.so
-lib/modules/br_netfilter.ko
-lib/modules/exfat.ko
-lib/modules/gspca_main.ko
-lib/modules/mpq-adapter.ko
-lib/modules/mpq-dmx-hw-plugin.ko
-lib/modules/msm_11ad_proxy.ko
-lib/modules/rdbg.ko
-lib/modules/test-iosched.ko
-lib/modules/ufs_test.ko
-lib/modules/wil6210.ko
 lib/sensors.hal.tof.so
 
 vendor/lib/hw/consumerir.default.so
@@ -451,7 +394,6 @@ vendor/lib/libFaceGrade.so
 vendor/lib/libFidoCrypto_vendor.so
 vendor/lib/libFlacSwDec.so
 vendor/lib/libI420colorconvert.so
-vendor/lib/libLctDiagSendDataApi.so
 
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libUBWC.so
@@ -559,9 +501,9 @@ vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvpptestutils.so
 vendor/lib/libvqzip.so
+vendor/lib/libSNPE.so
 
 # Missing lib64
-#lib64/egl/libGLES_android.so
 lib64/fm_helium.so
 
 lib64/libFidoCryptoJNI.so
@@ -571,31 +513,18 @@ lib64/libMegviiUnlock.so
 lib64/libOmxMux.so
 lib64/libOpenCL_system.so
 lib64/libQseeR2fServiceJNI.so
-lib64/libSNPE.so
 lib64/libSampleAuthJNI.so
 lib64/libSampleExtAuthJNI.so
 lib64/libSecureExtAuthJNI.so
 lib64/libSecureSampleAuthJNI.so
 lib64/libSeemplog.so
-lib64/libTmsdk-2.0.10-mfr.so
+
 lib64/libWnnEngDic.so
 lib64/libWnnJpnDic.so
 lib64/libadsprpc.so
 lib64/libadvanced_crypto.so
 lib64/libadvanced_crypto_jni.so
-lib64/libairtunes.so
-lib64/libairtunes_jni.so
-lib64/libantradio.so
-lib64/libavast-utils.so
-lib64/libavast-vps-interface.so
-lib64/libavcodec-milink.so
-lib64/libavenhancements.so
-lib64/libavformat-milink.so
-lib64/libavlasys.so
-lib64/libavlm.so
-lib64/libavlurl.so
-lib64/libavresample-milink.so
-lib64/libavutil-milink.so
+
 lib64/libblurbuster.so
 lib64/libbt-logClient.so
 lib64/libcdsprpc.so
@@ -603,31 +532,9 @@ lib64/libcert_parse.so
 lib64/libchromaflash.so
 lib64/libclearsight.so
 lib64/libcurl.so
-lib64/libdce-1.1.17-mfr.so
-
 lib64/libdict-parser.so
 lib64/libdisplayconfig.so
-lib64/libebt_802_3.so
-lib64/libebt_among.so
-lib64/libebt_arp.so
-lib64/libebt_arpreply.so
-lib64/libebt_ip.so
-lib64/libebt_ip6.so
-lib64/libebt_limit.so
-lib64/libebt_log.so
-lib64/libebt_mark.so
-lib64/libebt_mark_m.so
-lib64/libebt_nat.so
-lib64/libebt_nflog.so
-lib64/libebt_pkttype.so
-lib64/libebt_redirect.so
-lib64/libebt_standard.so
-lib64/libebt_stp.so
-lib64/libebt_vlan.so
-lib64/libebtable_broute.so
-lib64/libebtable_filter.so
-lib64/libebtable_nat.so
-lib64/libebtc.so
+
 lib64/libexmedia.so
 lib64/libfacial_action.so
 lib64/libfastcvadsp_stub.so
@@ -665,7 +572,6 @@ lib64/liblistensoundmodel2.so
 lib64/libmdsprpc.so
 lib64/libmediaplayerservice.so
 lib64/libmegbucket.so
-lib64/libminui.so
 
 lib64/libmp3lame.so
 lib64/libmtk_serialnum.so
@@ -715,13 +621,9 @@ lib64/libshellservice.so
 lib64/libsim-activate-root-checker.so
 lib64/libskbcli.so
 lib64/libsnpe_loader.so
-lib64/libstagefright_httplive.so
-lib64/libstagefright_soft_aacdec.so
-lib64/libstagefright_soft_aacenc.so
-lib64/libstagefright_soft_qtiflacdec.so
-lib64/libstagefright_wfd.so
+lib64/libSNPE.so
 lib64/libtcp.so
-lib64/libthemeutils_jni.so
+
 lib64/libtrueportrait.so
 lib64/libtruescanner.so
 lib64/libts_detected_face_jni.so
@@ -737,8 +639,6 @@ lib64/libvr_sam_wrapper.so
 lib64/libvraudio.so
 lib64/libvraudio_client.so
 lib64/libwapi_cert.so
-lib64/libwhetstone_jni.so
-lib64/libwhetstone_sdk.so
 lib64/libwificond_ipc.so
 lib64/libwifikeystorehalext.so
 lib64/libwigig_flashaccess.so
@@ -755,7 +655,6 @@ vendor/lib64/libFIDOKeyProvisioning.so
 vendor/lib64/libFidoCrypto_vendor.so
 vendor/lib64/libFlacSwDec.so
 vendor/lib64/libI420colorconvert.so
-vendor/lib64/libLctDiagSendDataApi.so
 vendor/lib64/libSubSystemShutdown.so
 vendor/lib64/libUBWC.so
 vendor/lib64/libUserAgent.so
@@ -830,10 +729,4 @@ vendor/lib64/libvpptestutils.so
 
 # Extra apks
 -vendor/app/CABLService/CABLService.apk
--vendor/app/Qmmi/Qmmi.apk
--vendor/app/QDMA-UI/QDMA-UI.apk
--vendor/app/QDMA/QDMA.apk
 -vendor/app/SecProtect/SecProtect.apk
-
-vendor/media/LMspeed_508.emd
-vendor/media/PFFprec_600.emd
