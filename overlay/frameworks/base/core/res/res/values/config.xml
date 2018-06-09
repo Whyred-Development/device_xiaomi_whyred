@@ -457,6 +457,6 @@
     <bool name="config_pinnerCameraApp">true</bool>
 
     <!-- Full screen aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">false</bool>
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
 </resources>
