@@ -205,11 +205,13 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio \
+    qcom.fmradio.xml
 
-PRODUCT_PACKAGES += \
-    android.hardware.broadcastradio@1.0-impl
+#PRODUCT_PACKAGES += \
+#    android.hardware.broadcastradio@1.0-impl
 
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
