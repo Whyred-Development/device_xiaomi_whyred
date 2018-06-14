@@ -244,10 +244,13 @@ TARGET_RIL_VARIANT := caf
 PROTOBUF_SUPPORTED := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 #include device/qcom/sepolicy/legacy-sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Treble
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Timeservice
