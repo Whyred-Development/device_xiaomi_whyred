@@ -1319,7 +1319,7 @@ vendor/media/PFFprec_600.emd
 vendor/speccfg/switch_spec.sh
 
 etc/permissions/vendor-qti-hardware-alarm.xml
-#-priv-app/MiuiCamera/MiuiCamera.apk
+priv-app/MiuiCamera/MiuiCamera.apk
 -app/uceShimService/uceShimService.apk
 framework/QtiTelephonyServicelibrary.jar
 etc/permissions/telephonyservice.xml
