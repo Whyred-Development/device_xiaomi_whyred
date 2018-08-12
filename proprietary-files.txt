@@ -164,7 +164,6 @@ vendor/lib/libfit_face_beauty.so
 vendor/lib/libgnustl_shared.so
 lib64/libgnustl_shared.so
 vendor/lib/libSNPE.so
-lib64/libSNPE.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
