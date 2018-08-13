@@ -1386,6 +1386,8 @@ lib64/libmmosal.so
 lib64/libmmparser.so
 lib64/libmmparser_lite.so
 
+lib/libsoftkeymaster.so
+lib64/libsoftkeymaster.so
 
 lib/librcc.so
 lib64/librcc.so
