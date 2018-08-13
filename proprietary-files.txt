@@ -275,6 +275,8 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
+vendor/lib64/libspl.so|bcc4eb3930bbeceb4598299f2ae6d0573ce8a75d
+vendor/lib/libspl.so|501c6349fb217500a2735bbe548b00614e767cbb
 vendor/lib/libQSEEComAPI.so
 lib/libGPTEE_system.so
 lib/libQTEEConnector_system.so
