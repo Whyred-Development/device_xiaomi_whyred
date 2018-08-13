@@ -144,6 +144,8 @@ vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/libseemore.so
 lib/libtrueportrait.so
+lib/libskia.so
+lib64/libskia.so
 lib64/libtrueportrait.so
 vendor/lib/libubifocus.so
 
