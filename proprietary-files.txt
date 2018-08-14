@@ -1327,6 +1327,9 @@ framework/QtiTelephonyServicelibrary.jar
 etc/permissions/telephonyservice.xml
 etc/permissions/privapp-permissions-qti.xml
 
+vendor/lib/libicuuc-v27.so|97cd1240093dac8a61ff51ee67d1118022ffa6bf
+vendor/lib/libminikin-v27.so|2768fc1fedd736f7d4c2ce30608699cd9408a417
+
 #Additional blobs
 -app/QtiSystemService/QtiSystemService.apk
 

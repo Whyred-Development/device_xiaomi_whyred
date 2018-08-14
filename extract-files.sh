@@ -69,4 +69,8 @@ patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0
 patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so $BLOB_ROOT/vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 patchelf --replace-needed android.hardware.gnss@1.0.so android.hardware.gnss@1.0-v27.so $BLOB_ROOT/lib/vendor.qti.gnss@1.0.so
 
+patchelf --replace-needed android.frameworks.sensorservice@1.0.so android.frameworks.sensorservice@1.0-v27.so $BLOB_ROOT/vendor/lib/libvidhance_gyro.so
+patchelf --replace-needed libminikin.so libminikin-v27.so $BLOB_ROOT/vendor/lib/libMiWatermark.so
+patchelf --replace-needed libicuuc.so libicuuc-v27.so $BLOB_ROOT/vendor/lib/libMiWatermark.so
+
 "$MY_DIR"/setup-makefiles.sh
