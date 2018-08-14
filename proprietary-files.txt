@@ -411,8 +411,7 @@ vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpsl.so
--app/ims/ims.apk:vendor/app/ims/ims.apk|3e4ef63b336099e172202ea8f7a19151e44cc4e8
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk|8a453ddf6adeb13d291f19bf09567207a267754b
+-app/ims/ims.apk:vendor/app/ims/ims.apk|350cf441da6c5e886f8f45adf03dffbd0b96f50e
 lib64/lib-imscamera.so:vendor/lib64/lib-imscamera.so
 lib64/lib-imsvideocodec.so:vendor/lib64/lib-imsvideocodec.so
 lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so
