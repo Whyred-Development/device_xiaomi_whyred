@@ -1,3 +1,4 @@
+
 /* 
 Copyright (c) 2013, The Linux Foundation. All rights reserved.
 
@@ -126,7 +127,7 @@ typedef struct
 } ipa_nl_sk_info_t;
 
 typedef struct ipa_nl_addr_s {
-	struct sockaddr_storage        ip_addr;
+	struct __kernel_sockaddr_storage        ip_addr;
 	unsigned int                   mask;
 } ipa_nl_addr_t;
 
@@ -149,11 +150,11 @@ typedef struct ipa_nl_addr_info_s {
 	{
 		unsigned int                  param_mask;
 		unsigned char                 label_name[IF_NAME_LEN];
-		struct sockaddr_storage       prefix_addr;
-		struct sockaddr_storage       local_addr;
-		struct sockaddr_storage       bcast_addr;
-		struct sockaddr_storage       acast_addr;
-		struct sockaddr_storage       mcast_addr;
+		struct __kernel_sockaddr_storage       prefix_addr;
+		struct __kernel_sockaddr_storage       local_addr;
+		struct __kernel_sockaddr_storage       bcast_addr;
+		struct __kernel_sockaddr_storage       acast_addr;
+		struct __kernel_sockaddr_storage       mcast_addr;
 	} attr_info;
 } ipa_nl_addr_info_t;
 
@@ -163,7 +164,7 @@ typedef struct ipa_nl_neigh_info_s {
 	struct                                  /* attributes  */
 	{
 		unsigned int                param_mask;
-		struct sockaddr_storage     local_addr;
+		struct __kernel_sockaddr_storage     local_addr;
 		struct  sockaddr            lladdr_hwaddr;
 	} attr_info;
 } ipa_nl_neigh_info_t;
@@ -175,10 +176,10 @@ typedef struct ipa_nl_route_info_s {
 	struct                                      /* attributes  */
 	{
 		unsigned int                  param_mask;
-		struct sockaddr_storage       dst_addr;
-		struct sockaddr_storage       src_addr;
-		struct sockaddr_storage       gateway_addr;
-		struct sockaddr_storage       mark_addr;
+		struct __kernel_sockaddr_storage       dst_addr;
+		struct __kernel_sockaddr_storage       src_addr;
+		struct __kernel_sockaddr_storage       gateway_addr;
+		struct __kernel_sockaddr_storage       mark_addr;
 		struct rta_cacheinfo          cache_info;
 		__u32		iif_index;                      /* Link index  */
 		__u32		oif_index;                      /* Link index  */
