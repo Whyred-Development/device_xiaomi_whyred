@@ -21,6 +21,7 @@
 #include <cutils/properties.h>
 #include <string.h>
 
+#undef PROPERTY_VALUE_MAX
 
 #define BTM_DEF_LOCAL_NAME "Xiaomi Redmi Note 5 Pro"
 #define BLUETOOTH_QTI_SW TRUE
