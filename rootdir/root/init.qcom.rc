@@ -68,6 +68,8 @@ on early-boot
     exec u:r:qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     chown root audio /sys/kernel/boot_adsp/boot
 
+    start qcom-post-boot
+
 on boot
     chown bluetooth bluetooth /sys/module/bluetooth_power/parameters/power
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/type
@@ -967,8 +969,6 @@ service wifi-crda /vendor/bin/init.crda.sh
    oneshot
 
 on property:sys.boot_completed=1
-    start qcom-post-boot
-
 service qvop-daemon /vendor/bin/qvop-daemon
     class late_start
     user system
